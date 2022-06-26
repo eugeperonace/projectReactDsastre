@@ -3,13 +3,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    /* background-image: 'https://images.pexels.com/photos/4541351/pexels-photo-4541351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+    background-image: url(../../assets/background_image.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; */
+    background-size: cover; 
+    background-color: pink;
+    padding-bottom: 2%;
  }
- .nav-logo img{
+ .nav-logo{
     size: 100px;
+    padding-top: 1%;
+    padding-left: 2%;
  }
  .nav-item {
     text-decoration: none;

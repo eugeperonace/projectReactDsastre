@@ -1,9 +1,8 @@
 .landing {
     width: 100%;
-    height: calc(100vh - 60px);
+    padding-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-style: italic;
+    font-size: 20px;
   }

@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./Components/NavBAr/index.js";
+import NavBar from "./Components/NavBar/index.js";
 import ItemListContainer from "./Components/ItemListContainer";
+import logoDsastre from "./assets/logoDsastre.jpg";
 
 function App() {
   return (
     <>
       <NavBar/>
-      <ItemListContainer greeting="Bienvenidos a DSASTRE"/>
+      <ItemListContainer greeting="BIENVENIDOS"/>
+      <center>
+       <img src={logoDsastre} alt="" className="imgLogo" /> 
+      </center>
     </>
   );
 }
