@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <NavBar/>
-      <ItemListContainer greeting="BIENVENIDOS"/>
       <center>
        <img src={logoDsastre} alt="" className="imgLogo" /> 
       </center>
+      <ItemListContainer greeting="Bienvenidos a nuestro sitio web."/>
     </>
   );
 }
