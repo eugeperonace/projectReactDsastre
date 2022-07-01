@@ -26,7 +26,6 @@ const ItemListContainer = ({greeting}) => {
             <span>{greeting}</span>
         </div>
         <div>
-            <h1>{greeting}</h1>
             {loading ? <p>Cargando productos...</p> : <ItemList productList={productList}/> }
         </div>
             <ItemCount initial={1} stock={12} onAdd={onAdd}/>
