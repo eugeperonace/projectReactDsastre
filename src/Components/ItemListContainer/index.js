@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import "./styles.css";
-import ItemCount from "../ItemCount/itemCount";
 import ItemList from '../ItemList/ItemList'
 import { getData } from '../../mocks/fakeApi'
 
@@ -16,10 +15,6 @@ const ItemListContainer = ({greeting}) => {
         .finally(()=>setLoading(false) )
         },[])
 
-    const onAdd = (quantity) =>{
-        console.log(`¡Compraste ${quantity} unidades!`);
-    }
-
     return(
         <>
         <div className="landing">
@@ -28,7 +23,6 @@ const ItemListContainer = ({greeting}) => {
         <div>
             {loading ? <p>Cargando productos...</p> : <ItemList productList={productList}/> }
         </div>
-            <ItemCount initial={1} stock={12} onAdd={onAdd}/>
         </>    
     );
         
