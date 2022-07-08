@@ -1,6 +1,8 @@
-.card{
-    width:20rem;
-    margin:.5rem;
+.detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .card-body{
     font-size: 1rem;
