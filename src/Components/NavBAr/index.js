@@ -27,7 +27,9 @@ const NavBar = () =>{
                 ))}
             </div>
             <div className="cart">
-                <CartWidget />
+                <Link to="cart">
+                    <CartWidget />
+                </Link>
             </div>
             <div className="nav-mobile">
                 <div className="cart-mobile">

@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Cart = () => {
-    return <div>Soy el carrito</div>;
+    return(
+            <div>VOY A SER EL CARRITOOOOOOO!!</div>
+    ) 
 };
 
 export default Cart;
