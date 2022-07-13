@@ -28,3 +28,11 @@ select {
     font-size: 10px;
     margin-left: 0.3rem;
 }
+.checkOut{
+    background-color: rgb(211, 211, 211);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: outset;
+    padding: 2px;
+}
