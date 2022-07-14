@@ -5,7 +5,7 @@ import logoDS from "../.././assets/logoDS.jpg"
 import { Link } from 'react-router-dom';
 
 const categories = [
-    { id: 1, path: '/', name: 'Home',},
+    { id: 1, path: '/', name: 'Home',}, 
     { id: 2, path: '/category/sacos', name: 'Sacos',},
     { id: 3, path: '/category/polleras', name: 'Polleras',},
     { id: 4, path: '/category/camisas', name: 'Camisas',},
