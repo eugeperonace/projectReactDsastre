@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./Components/NavBar/Index.js";
+import NavBar from "./Components/Navbar/Navbar.js";
 import ItemListContainer from "./Components/ItemListContainer";
 import logoDsastre from "./assets/logoDsastre.jpg";
 import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
