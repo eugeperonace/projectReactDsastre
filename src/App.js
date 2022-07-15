@@ -17,11 +17,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <CartProvider>
         <NavBar />
         <center>
           <img src={logoDsastre} alt="" className="imgLogo" /> 
         </center> 
-        <CartProvider>
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />

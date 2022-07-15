@@ -1,12 +1,9 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import "./styles.css";
 import { Link } from 'react-router-dom';
-import { CartContext } from '../../Context/CartContext';
 
 const Item = ({product}) => {
-  const carrito = useContext(CartContext);
-  console.log("carritooooooooo",carrito);
-
+  console.log(product)
   const {img, name, price}= product
 
   return (
