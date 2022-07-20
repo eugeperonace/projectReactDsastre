@@ -29,7 +29,6 @@ const CartProvider = ({children}) => {
 
     const removeProduct = (id) => setCart(cart.filter(product => product.id !== id));
 
-    console.log(CartProvider);
     return(
         <CartContext.Provider value={{
             ClearCart,
@@ -38,6 +37,7 @@ const CartProvider = ({children}) => {
             addProduct,
             totalPrice,
             totalProducts,
+            cart
         }}>
             {children}
         </CartContext.Provider>
