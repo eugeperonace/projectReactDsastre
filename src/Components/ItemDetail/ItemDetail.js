@@ -15,7 +15,7 @@ const ItemDetail = ({product}) =>{
         setGoToCart(true);
         addProduct(product, quantity);
     }
-console.log(product)
+//console.log(product)
     return(
         <div className="detail">
             <div className="card">
