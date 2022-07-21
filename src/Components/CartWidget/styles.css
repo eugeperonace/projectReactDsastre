@@ -11,3 +11,9 @@
     height: 2.5rem;
     padding-right: 1rem;
 }
+
+.cart-btn span{
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+}
