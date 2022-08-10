@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { getItem } from "../../mocks/fakeApi";
+//import { getItem } from "../../mocks/fakeApi";
 import ItemDetail from "../ItemDetail/ItemDetail.js"
 import { useParams } from 'react-router-dom';
+import { db } from "../../firebase/firebase"
+import { doc, getDoc, collection } from "firebase/firestore"
 
 const ItemDetailContainer = ()=> {
     
@@ -12,17 +14,18 @@ const ItemDetailContainer = ()=> {
     //console.log(id);
 
     useEffect(()=>{
-        setLoading(true);
-        getItem(id)
-            .then((res) => {
-                setProduct(res);
-            })
-            .catch((error) => {
-                console.log(error);
-            })
-            .finally(() => {
-                setLoading(false);
-            }); 
+        const productsCollection = collection(db, 'products');
+        const refDoc = doc(productsCollection,id)
+        getDoc(refDoc)
+        .then(result => {
+            setProduct(result.data())
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+        .finally(() => {
+            setLoading(false);
+        }); 
     }, [id]);
 
     //console.log(product);
