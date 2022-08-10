@@ -6,6 +6,7 @@ import logoDsastre from "./assets/logoDsastre.jpg";
 import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
 import Cart from './Components/Cart/Cart.js';
 import CartProvider from "./Context/CartContext";
+import Checkout from "./Components/Checkout/checkout";
 
 import {
   BrowserRouter,
@@ -27,7 +28,9 @@ function App() {
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/detail/:id" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path='/checkout' element={<Checkout/>}/>
         </Routes>
+        
         </CartProvider>
       </BrowserRouter>
     </>

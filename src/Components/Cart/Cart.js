@@ -15,15 +15,17 @@ const Cart = () => {
             </center>
         );
     }
+
     return(
         <>
-            {
-                cart.map(product => <ItemCart key={product.id} product={product}/>)
-            }
+            {cart.map(product => <ItemCart key={product.id} product={product}/>)}
             <p>
                 Total: {totalPrice()};
             </p>
-        
+            <div>
+                <Link to='/checkout' className="">Finalizar compra</Link>
+            </div>
+            
         </>
     ) 
 };

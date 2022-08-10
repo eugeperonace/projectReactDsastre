@@ -23,19 +23,20 @@ const ItemDetail = ({product}) =>{
                 <div className="card-body">
                     <p className="card-title">{name}</p>
                     <p className="card-price">{price}</p>
-                    <div className="card-text"> Talle
-                        <select>
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                        </select>    
-                        <p>{description}</p>
-                    </div>
+                    <p>{description}</p>
+                    <div className="display">
                     {
                         goToCart
-                            ? <Link to="/cart" className="checkOut">Finalizar compra</Link>
+                            ? <Link to="/" className="checkOut">Seguir Comprando</Link>
                             : <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
-                    }
+                    }   
+                    </div>
+                    <center className="goToCart">
+                        <Link to='/cart' className="checkOut">Ir al carrito</Link>
+                    </center>
+                        
+                    
+                    
                 </div>
             </div>
         </div>

@@ -29,10 +29,23 @@ select {
     margin-left: 0.3rem;
 }
 .checkOut{
-    background-color: rgb(211, 211, 211);
+    color: black;
+    background-color: gray;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
     border: outset;
-    padding: 2px;
+    padding: 5px;
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    margin: 10%;
+    border: 20%;
+}
+
+.goToCart{
+    padding-bottom: 10%;
 }
