@@ -18,7 +18,10 @@ const ItemDetailContainer = ()=> {
         const refDoc = doc(productsCollection,id)
         getDoc(refDoc)
         .then(result => {
-            setProduct(result.data())
+            setProduct({
+                id: result.id,
+                ...result.data(),
+            })
         })
         .catch((error) => {
             console.log(error);

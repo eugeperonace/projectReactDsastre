@@ -14,8 +14,10 @@ const ItemListContainer = ({greeting}) => {
     const {categoryId} = useParams();
 
     useEffect(()=>{
-        const productsCollection = collection(db, 'products');
-        const q = query(productsCollection, where('category', '==', "sacos")); 
+        const q = categoryId
+        ? query(collection(db, 'products'), where('category', '==', categoryId))
+        : collection(db, 'products');
+
         getDocs(q)
         .then(result => {
             const lista = result.docs.map(product => {
