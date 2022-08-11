@@ -1,13 +1,20 @@
 .card{
     width:20rem;
     margin:.5rem;
+    justify-content: center;
+    align-items: center;
 }
 .card-body{
     font-size: 1rem;
+    background-image: url(../../assets/background_image.jpg);
 }
 .card-title{
     font-weight: bold;
     font-size: 1.4rem;
+    font-style: italic;
+}
+.card-price{
+    font-size: 1.1rem;
 }
 .card-text{
     font-style: italic;

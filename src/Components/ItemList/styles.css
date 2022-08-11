@@ -1,0 +1,7 @@
+.productList{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 8%;
+    background-image: url(../../assets/background_image.jpg);
+    padding: 1.8rem;
+}

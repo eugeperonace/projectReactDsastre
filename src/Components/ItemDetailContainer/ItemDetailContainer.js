@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-//import { getItem } from "../../mocks/fakeApi";
 import ItemDetail from "../ItemDetail/ItemDetail.js"
 import { useParams } from 'react-router-dom';
 import { db } from "../../firebase/firebase"
@@ -11,7 +10,6 @@ const ItemDetailContainer = ()=> {
     const [loading, setLoading] = useState(true);
 
     const {id} = useParams();
-    //console.log(id);
 
     useEffect(()=>{
         const productsCollection = collection(db, 'products');
@@ -31,7 +29,6 @@ const ItemDetailContainer = ()=> {
         }); 
     }, [id]);
 
-    //console.log(product);
 
     return(
         <div>

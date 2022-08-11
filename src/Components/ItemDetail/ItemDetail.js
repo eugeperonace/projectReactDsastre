@@ -15,31 +15,33 @@ const ItemDetail = ({product}) =>{
         setGoToCart(true);
         addProduct(product, quantity);
     }
-//console.log(product)
+
     return(
-        <div className="detail">
-            <div className="card">
-                <img src={img} alt={name} className="card-img-top" /> 
-                <div className="card-body">
-                    <p className="card-title">{name}</p>
-                    <p className="card-price">$ {price}</p>
-                    <p>{description}</p>
-                    <div className="display">
-                    {
-                        goToCart
-                            ? <Link to="/" className="checkOut">Seguir Comprando</Link>
-                            : <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
-                    }   
-                    </div>
-                    <center className="goToCart">
-                        <Link to='/cart' className="checkOut">Ir al carrito</Link>
-                    </center>
+        <center>
+            <div className="detail">
+                <div className="card">
+                    <img src={img} alt={name} className="card-img-top" /> 
+                    <div className="card-body">
+                        <p className="card-title">{name}</p>
+                        <p className="card-price">$ {price}</p>
+                        <p>{description}</p>
+                        <div className="display">
+                        {
+                            goToCart
+                                ? <Link to="/" className="checkOut">Seguir Comprando</Link>
+                                : <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
+                        }   
+                        </div>
+                        <center className="goToCart">
+                            <Link to='/cart' className="checkOut">Ir al carrito</Link>
+                        </center>
+                            
                         
-                    
-                    
+                        
+                    </div>
                 </div>
             </div>
-        </div>
+        </center>
     );
 };
 
