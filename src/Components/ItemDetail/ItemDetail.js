@@ -22,7 +22,7 @@ const ItemDetail = ({product}) =>{
                 <img src={img} alt={name} className="card-img-top" /> 
                 <div className="card-body">
                     <p className="card-title">{name}</p>
-                    <p className="card-price">{price}</p>
+                    <p className="card-price">$ {price}</p>
                     <p>{description}</p>
                     <div className="display">
                     {

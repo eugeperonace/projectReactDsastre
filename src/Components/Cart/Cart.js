@@ -19,12 +19,10 @@ const Cart = () => {
     return(
         <>
             {cart.map(product => <ItemCart key={product.id} product={product}/>)}
-            <p>
-                Total: {totalPrice()};
-            </p>
-            <div>
-                <Link to='/checkout' className="">Finalizar compra</Link>
-            </div>
+            <center>
+                <p>Total: {totalPrice()};</p>
+                <Link to='/checkout' className="checkOut">Finalizar compra</Link>
+            </center>
             
         </>
     ) 
